@@ -1,0 +1,7 @@
+schema:
+  name: ga-schema
+  version: 1.0.0
+configs:
+  AppName: CountryAdapter
+  CountryName: ${{$val(CountryName)}}
+  DependencyConfigs:

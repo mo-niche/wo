@@ -1,0 +1,9 @@
+rules:
+  configs:
+    CountryName:
+      type: string
+      required: true
+      editableAt:
+        - country
+      editableBy:
+        - OT

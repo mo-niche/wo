@@ -1,0 +1,15 @@
+schema:
+  name: lapp-schema
+  version: 1.0.0
+dependencies:
+  - solutionTemplateId: <ga-solutionTemplateId>
+    configsToBeInjected:
+      - from: DependencyConfig
+        to: DependencyConfigs
+configs:
+  DependencyConfig:
+    AppName: ChemicalSurfactantsAnomalyDetector
+    GlobalLogLevel: ${{$val(GlobalLogLevel)}}
+    RegionKeyVaultName: ${{$val(RegionKeyVaultName)}}
+    FactoryTimeWindowShift: ${{$val(FactoryTimeWindowShift)}}
+    LineCode: ${{$val(LineCode)}}

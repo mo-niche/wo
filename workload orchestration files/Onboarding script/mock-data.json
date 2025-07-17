@@ -1,0 +1,130 @@
+﻿{
+    "common": {
+        "resourceGroup": "MockDataRG",
+        "subscriptionId": "973x15x6-6x57-774x-x9x6-6x79x5x784xx",
+        "location": "eastus2",
+        "tenantId" : "72x988xx-86x1-41xx-91xx-2d7xx011db47",
+        "providerAppId" : "cba491bc-48c0-44a6-a6c7-23362a7f54a9"
+    },
+    "infraOnboarding": {
+        "arcLocation": "eastus2",
+        "aksClusterIdentity": "WO-Cluster-Identity",
+        "aksClusterName": "WO-Cluster",
+        "customLocationName": "custest",
+        "customLocationNamespace": "custest",
+        "workloadOrchestrationWHL": "C:\\Users\\johndoe\\Downloads\\workload_orchestration-1.1.8-py3-none-any.whl",
+        "contextResourceGroup": "Redmond",
+        "contextName": "Redmond-Context",
+        "contextSubscriptionId": "973x15x6-6x57-774x-x9x6-6x79x5x784xx",
+        "contextLocation": "eastus2",
+        "diagInfo": {
+          "diagnosticWorkspaceId": "",
+          "diagnosticResourceName": "default",
+          "diagnosticSettingName": "default"
+        },  
+        "acrName": "",
+        "storageClassName": "",
+        "connectedRegistryName": "",
+        "connectedRegistryIp": "",
+        "connectedRegistryClientToken": "",
+        "storageSizeRequest": "",
+        "siteHierarchy": [
+            {
+                "siteName": "AzureUnitedStates",
+                "parentSite":null,          
+                "level": "factory" ,
+                "capabilityList": {
+                    "capabilities": [
+                        "azure-soap",
+                        "azure-shampoo"
+                    ]
+                },
+                "hierarchyLevels": {
+                    "levels": [
+                        "factory",
+                        "line"
+                    ]
+                },
+                "deploymentTargets": {
+                    "rbac": {
+                        "role": "Contributor",
+                        "userGroup": "8644x15x6-6c57-447e-x9x6-9e79b5b784xx"
+                    },
+                    "capabilities": [
+                        "azure-soap"
+                    ],
+                    "hierarchyLevel": "line",
+                    "namespace": "LineNamespace",
+                    "targetSpecFile": "C:\\Users\\johndoe\\Downloads\\targetspecs.json",
+                    "targets": [
+                        {
+                            "name": "Line6723",
+                            "displayName": "Line6723"
+                        },
+                        {
+                            "name": "RedmondFactory23",
+                            "displayName": "RedmondFactory23",
+                            "capabilities": [
+                                "azure-soap"
+                            ],
+                            "hierarchyLevel": "factory",
+                            "namespace": "RedmondFactoryNamespace",
+                            "rbac": {
+                                "role": "Contributor",
+                                "userGroup": "redmond-factory@test.com"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "siteName": "Redmond",
+                "parentSite":"AzureUnitedStates",                
+                "level": "factory"
+            }
+        ]
+    },
+    "cmOnboarding": {
+        "schemas": [
+            {
+                "name": "CommonSchemaNew",
+                "version": "1.0.0",
+                "schemaFile": "C:\\Users\\johndoe\\Downloads\\shared-schema.yaml"
+            },
+            {
+                "name": "testuser-SS",
+                "version": "1.0.3",
+                "schemaFile": "C:\\Users\\johndoe\\Downloads\\shared-schema.yaml"
+            }
+        ],
+        "configs": [
+            {
+                "name": "CommonConfig1",
+                "versionName": "1.0.4",
+                "configFile": "C:\\Users\\johndoe\\Downloads\\app-config-template.yaml"
+            }
+        ],
+        "solutions": [
+            {
+                "name": "testuser-S12",
+                "description": "testuser-S1",
+                "capabilities": [
+                    "azure-soap"
+                ],
+                "version": "1.0.4",
+                "configTemplate": "C:\\Users\\johndoe\\Downloads\\app-config-template.yaml",
+                "specificationFile": "C:\\Users\\johndoe\\Downloads\\specs.json"
+            },
+            {
+                "name": "testuser-S22",
+                "description": "testuser-S2",
+                "capabilities": [
+                    "azure-shampoo"
+                ],
+                "version": "1.0.4",
+                "configTemplate": "C:\\Users\\johndoe\\Downloads\\app-config-template.yaml",
+                "specificationFile": "C:\\Users\\johndoe\\Downloads\\specs.json"
+            }
+        ]
+    }
+}

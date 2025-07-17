@@ -1,0 +1,23 @@
+rules:
+  configs:
+    GlobalHubName:
+      type: string
+      required: true
+      editableAt:
+        - country
+      editableBy:
+        - OT
+    RegionDnsZone:
+      type: string
+      required: true
+      editableAt:
+        - region
+      editableBy:
+        - OT
+    RegionHubPort:
+      type: int
+      required: true
+      editableAt:
+        - region
+      editableBy:
+        - OT

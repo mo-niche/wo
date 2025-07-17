@@ -1,0 +1,30 @@
+rules:
+  configs:
+    GlobalLogLevel:
+      type: string
+      required: true
+      editableAt:
+        - country
+      editableBy:
+        - OT
+    RegionKeyVaultName:
+      type: string
+      required: true
+      editableAt:
+        - region
+      editableBy:
+        - OT
+    FactoryTimeWindowShift:
+      type: string
+      required: true
+      editableAt:
+        - factory
+      editableBy:
+        - OT
+    LineCode:
+      type: string
+      required: true
+      editableAt:
+        - line
+      editableBy:
+        - OT

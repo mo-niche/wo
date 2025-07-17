@@ -1,0 +1,8 @@
+schema:
+  name: <resourcePrefix>-RHS
+  version: 1.0.0
+configs:
+  AppName: RegionHub
+  GlobalHubName: ${{$val(GlobalHubName)}}
+  RegionDnsZone: ${{$val(RegionDnsZone)}}
+  RegionHubPort: ${{$val(RegionHubPort)}}

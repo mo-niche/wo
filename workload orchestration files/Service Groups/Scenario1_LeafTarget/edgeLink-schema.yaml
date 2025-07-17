@@ -1,0 +1,58 @@
+rules:
+  configs:
+    DatabaseName:
+      type: string
+      required: true
+      editableAt:
+        - country
+      editableBy:
+        - OT
+    DatabasePort:
+      type: int
+      required: true
+      editableAt:
+        - country
+      editableBy:
+        - OT
+    RegionReplicaCount:
+      type: int
+      required: true
+      editableAt:
+        - region
+      editableBy:
+        - OT
+    EnableMultiRegion:
+      type: boolean
+      required: true
+      editableAt:
+        - region
+      editableBy:
+        - OT
+    FactoryName:
+      type: string
+      required: true
+      editableAt:
+        - factory
+      editableBy:
+        - OT
+    FactoryKeyVaultName:
+      type: string
+      required: true
+      editableAt:
+        - factory
+      editableBy:
+        - OT
+    KubernetesVersion:
+      type: string
+      required: true
+      editableAt:
+        - line
+      editableBy:
+        - OT
+    LogLevelNumber:
+      type: int
+      required: true
+      editableAt:
+        - line
+      editableBy:
+        - OT

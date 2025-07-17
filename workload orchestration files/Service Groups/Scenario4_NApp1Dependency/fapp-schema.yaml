@@ -1,0 +1,30 @@
+rules:
+  configs:
+    CountryCode:
+      type: string
+      required: true
+      editableAt:
+        - country
+      editableBy:
+        - OT
+    RegionNotificationEmail:
+      type: string
+      required: true
+      editableAt:
+        - region
+      editableBy:
+        - OT
+    AiMqBrokerAddress:
+      type: string
+      required: true
+      editableAt:
+        - factory
+      editableBy:
+        - OT
+    AiMqBrokerPort:
+      type: int
+      required: true
+      editableAt:
+        - factory
+      editableBy:
+        - OT

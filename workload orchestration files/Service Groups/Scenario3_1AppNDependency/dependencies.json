@@ -1,0 +1,11 @@
+[
+    {
+        "solutionVersionId": "<ca-solution-version-id>"
+    },
+    {
+        "solutionVersionId": "<ra-solution-version-id>"
+    },
+    {
+        "solutionVersionId": "<wwa-solution-version-id>"
+    }
+]

@@ -1,0 +1,12 @@
+schema:
+  name: Sharedschema
+  version: 1.0.4
+configs:
+  AppName: PriceDetector
+  PressureRangeMax: ${{$val(pressureRangeMax)}}
+  LengthRangeMax: ${{$val(lengthRangeMax)}}
+  ErrorThreshold: ${{$val(ErrorThreshold)}}
+  HealthCheckEndpoint: ${{$val(HealthCheckEndpoint)}}
+  EnableLocalLog: ${{$val(EnableLocalLog)}}
+  HealthCheckEnabled: ${{$val(HealthCheckEnabled)}}
+  ApplicationEndpoint: ${{$val(ApplicationEndpoint)}}

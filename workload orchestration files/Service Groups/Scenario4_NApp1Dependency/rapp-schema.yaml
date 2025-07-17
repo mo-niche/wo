@@ -1,0 +1,16 @@
+rules:
+  configs:
+    BasePort:
+      type: int
+      required: true
+      editableAt:
+        - country
+      editableBy:
+        - OT
+    RegionReplicaCount:
+      type: int
+      required: true
+      editableAt:
+        - region
+      editableBy:
+        - OT

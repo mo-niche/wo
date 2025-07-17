@@ -1,0 +1,23 @@
+schema:
+  name: csad-schema
+  version: 1.0.0
+dependencies:
+  - solutionTemplateId: <ca-solutionTemplateId>
+    configsToBeInjected:
+      - from: DependencyConfig
+        to: DependencyConfigs
+  - solutionTemplateId: <ra-solutionTemplateId>
+    configsToBeInjected:
+      - from: DependencyConfig
+        to: DependencyConfigs
+  - solutionTemplateId: <wwa-solutionTemplateId>
+    configsToBeInjected:
+      - from: DependencyConfig
+        to: DependencyConfigs
+configs:
+  DependencyConfig:
+    AppName: ChemicalSurfactantsAnomalyDetector
+    GlobalLogLevel: ${{$val(GlobalLogLevel)}}
+    RegionKeyVaultName: ${{$val(RegionKeyVaultName)}}
+    FactoryTimeWindowShift: ${{$val(FactoryTimeWindowShift)}}
+    LineCode: ${{$val(LineCode)}}

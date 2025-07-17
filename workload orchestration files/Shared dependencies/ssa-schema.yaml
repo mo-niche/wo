@@ -1,0 +1,30 @@
+rules:
+  configs:
+     PrometheusPort:
+        type: string
+        required: true
+        editableAt:
+         - line
+        editableBy:
+         - OT
+     AiMqBrokerAddress:
+        type: string
+        required: true
+        editableAt:
+         - line
+        editableBy:
+         - OT
+     AiMqBrokerPort:
+        type: int
+        required: true
+        editableAt:
+         - line
+        editableBy:
+         - OT
+     DeploymentName:
+        type: string
+        required: true
+        editableAt:
+         - line
+        editableBy:
+         - OT

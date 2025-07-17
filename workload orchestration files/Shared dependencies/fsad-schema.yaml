@@ -1,0 +1,37 @@
+rules:
+  configs:
+     SiteName:
+        type: string
+        required: true
+        editableAt:
+         - line
+        editableBy:
+         - OT
+     LineName:
+        type: string
+        required: true
+        editableAt:
+         - line
+        editableBy:
+         - OT
+     LogLevel:
+        type: string
+        required: true
+        editableAt:
+         - line
+        editableBy:
+         - OT
+     TimeWindowShift:
+        type: int
+        required: true
+        editableAt:
+         - line
+        editableBy:
+         - OT
+     DeploymentName:
+        type: string
+        required: true
+        editableAt:
+         - line
+        editableBy:
+         - OT

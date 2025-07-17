@@ -1,0 +1,13 @@
+schema:
+  name: rapp-schema
+  version: 1.0.0
+dependencies:
+  - solutionTemplateId: <ga-solutionTemplateId>
+    configsToBeInjected:
+      - from: DependencyConfig
+        to: DependencyConfigs
+configs:
+  DependencyConfig:
+    AppName: RegionApp
+    BasePort: ${{$val(BasePort)}}
+    RegionReplicaCount: ${{$val(RegionReplicaCount)}}

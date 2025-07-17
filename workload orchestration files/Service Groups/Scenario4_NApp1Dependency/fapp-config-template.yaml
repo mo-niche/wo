@@ -1,0 +1,15 @@
+schema:
+  name: fapp-schema
+  version: 1.0.0
+dependencies:
+  - solutionTemplateId: <ga-solutionTemplateId>
+    configsToBeInjected:
+      - from: DependencyConfig
+        to: DependencyConfigs
+configs:
+  DependencyConfig:
+    AppName: FactoryApp
+    CountryCode: ${{$val(CountryCode)}}
+    RegionNotificationEmail: ${{$val(RegionNotificationEmail)}}
+    AiMqBrokerAddress: ${{$val(AiMqBrokerAddress)}}
+    AiMqBrokerPort: ${{$val(AiMqBrokerPort)}}

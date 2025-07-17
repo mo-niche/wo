@@ -1,0 +1,20 @@
+{
+    "contactDetails": {
+        "contactName": "Persona",
+        "emailList": [
+            "noreply@contoso.com"        
+        ],
+        "phone": "0000000000",
+        "phoneExtension": ""
+    },
+    "shippingAddress": {
+        "addressType": "None",
+        "city": "Redmond",
+        "companyName": "Contoso",
+        "country": "US",
+        "postalCode": "",
+        "stateOrProvince": "",
+        "streetAddress1": "1",
+        "streetAddress2": "First Lane"
+    }
+}

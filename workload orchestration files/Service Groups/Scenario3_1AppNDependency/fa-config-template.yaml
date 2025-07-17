@@ -1,0 +1,10 @@
+schema:
+  name: wwa-schema
+  version: 1.0.0
+configs:
+  AppName: WonderWareAdapter
+  CountryCode: ${{$val(CountryCode)}}
+  RegionNotificationEmail: ${{$val(RegionNotificationEmail)}}
+  AiMqBrokerAddress: ${{$val(AiMqBrokerAddress)}}
+  AiMqBrokerPort: ${{$val(AiMqBrokerPort)}}
+  DependencyConfigs:

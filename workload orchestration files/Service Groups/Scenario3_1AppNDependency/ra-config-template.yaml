@@ -1,0 +1,8 @@
+schema:
+  name: ra-schema
+  version: 1.0.0
+configs:
+  AppName: RegionAdapter
+  BasePort: ${{$val(BasePort)}}
+  RegionReplicaCount: ${{$val(RegionReplicaCount)}}
+  DependencyConfigs:

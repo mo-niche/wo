@@ -1,0 +1,13 @@
+schema:
+  name: <resourcePrefix>-ELS
+  version: 1.0.0
+configs:
+  AppName: EdgeLink
+  DatabaseName: ${{$val(DatabaseName)}}
+  DatabasePort: ${{$val(DatabasePort)}}
+  RegionReplicaCount: ${{$val(RegionReplicaCount)}}
+  EnableMultiRegion: ${{$val(EnableMultiRegion)}}
+  FactoryName: ${{$val(FactoryName)}}
+  FactoryKeyVaultName: ${{$val(FactoryKeyVaultName)}}
+  KubernetesVersion: ${{$val(KubernetesVersion)}}
+  LogLevelNumber: ${{$val(LogLevelNumber)}}
