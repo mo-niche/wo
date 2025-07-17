@@ -1,18 +1,69 @@
 metadata:
-  name: "CommonSchema"
+  name: CommonSchema
+  version: 1.0.7
 
 rules:
-  SqlServerEndpoint:
-    type: string
-    required: true
-    editableAt:
-      - factory
-    editableBy:
-      - OT
-  LineHealthEndpoint:
-    type: string
-    required: true
-    editableAt:
-      - line
-    editableBy:
-      - OT
+  configs:
+    SqlServerEndpoint:
+      type: string
+      required: true
+      editableAt:
+        - factory
+      editableBy:
+        - OT
+    LineHealthEndpoint:
+      type: string
+      required: true
+      editableAt:
+        - line
+      editableBy:
+        - OT
+    ErrorThreshold:
+      type: float
+      required: true
+      editableAt:
+        - factory
+      editableBy:
+        - OT
+    HealthCheckEndpoint:
+      type: string
+      required: false
+      editableAt:
+        - line
+      editableBy:
+        - OT
+    EnableLocalLog:
+      type: boolean
+      required: true
+      editableAt:
+        - line
+      editableBy:
+        - OT
+    HealthCheckEnabled:
+      type: boolean
+      required: false
+      editableAt:
+        - line
+      editableBy:
+        - OT
+    ApplicationEndpoint:
+      type: string
+      required: true
+      editableAt:
+        - line
+      editableBy:
+        - OT
+    PressureRangeMax:
+      type: float
+      required: true
+      editableAt:
+        - line
+      editableBy:
+        - OT
+    LengthRangeMax:
+      type: float
+      required: true
+      editableAt:
+        - line
+      editableBy:
+        - OT

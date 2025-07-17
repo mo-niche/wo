@@ -1,12 +1,17 @@
 schema:
-  name: Sharedschema
-  version: 1.0.4
+  name: CommonSchema
+  version: 1.0.7
+metadata:
+  name: mnath-app
+  version: 1.0.7
 configs:
   AppName: PriceDetector
-  PressureRangeMax: ${{$val(pressureRangeMax)}}
-  LengthRangeMax: ${{$val(lengthRangeMax)}}
-  ErrorThreshold: ${{$val(ErrorThreshold)}}
-  HealthCheckEndpoint: ${{$val(HealthCheckEndpoint)}}
-  EnableLocalLog: ${{$val(EnableLocalLog)}}
-  HealthCheckEnabled: ${{$val(HealthCheckEnabled)}}
-  ApplicationEndpoint: ${{$val(ApplicationEndpoint)}}
+  pressureRangeMax: ${{$val(PressureRangeMax)}}
+  lengthRangeMax: ${{$val(LengthRangeMax)}}
+  errorThreshold: ${{$val(ErrorThreshold)}}
+  healthCheckEndpoint: ${{$val(HealthCheckEndpoint)}}
+  enableLocalLog: ${{$val(EnableLocalLog)}}
+  healthCheckEnabled: ${{$val(HealthCheckEnabled)}}
+  applicationEndpoint: ${{$val(ApplicationEndpoint)}}
+  SqlServerEndpoint: ${{$config(CommonConfig/1.0.6,SqlServerEndpoint)}}
+  LineHealthEndpoint: ${{$config(CommonConfig/1.0.6,LineHealthEndpoint)}}

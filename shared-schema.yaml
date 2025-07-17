@@ -1,5 +1,6 @@
 metadata:
-  name: Sharedschema
+  name: SharedSchema
+  version: 1.0.6
 
 rules:
   configs:
