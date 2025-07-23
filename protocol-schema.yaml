@@ -1,0 +1,23 @@
+metadata:
+  name: ProtocolSchema
+  version: 1.0.0
+  
+rules:
+  configs:
+    SupportedHttpMethods:
+      type: string
+      required: true
+      editableAt:
+        - factory
+      editableBy:
+        - OT
+    TCP:
+      type: object
+      required: true
+    TCP.EnableSSL:
+      type: boolean
+      required: true
+      editableAt:
+        - factory
+      editableBy:
+        - OT

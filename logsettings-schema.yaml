@@ -1,0 +1,19 @@
+metadata:
+  name: LogsettingsSchema
+  version: 1.0.0
+
+rules:
+  configs:
+    LogSettings:
+      type: object
+      required: true
+    LogSettings.LogOutput:
+      type: object
+      required: true
+    LogSettings.LogOutput.EnableConsole:
+      type: boolean
+      required: true
+      editableAt:
+       - line
+      editableBy:
+       - OT

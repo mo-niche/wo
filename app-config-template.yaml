@@ -1,9 +1,9 @@
 schema:
   name: CommonSchema
-  version: 1.0.7
+  version: 1.0.9
 metadata:
-  name: mnath-app
-  version: 1.0.7
+  name: mnath-app2
+  version: 1.0.9
 configs:
   AppName: PriceDetector
   pressureRangeMax: ${{$val(PressureRangeMax)}}
@@ -13,5 +13,5 @@ configs:
   enableLocalLog: ${{$val(EnableLocalLog)}}
   healthCheckEnabled: ${{$val(HealthCheckEnabled)}}
   applicationEndpoint: ${{$val(ApplicationEndpoint)}}
-  SqlServerEndpoint: ${{$config(CommonConfig/1.0.6,SqlServerEndpoint)}}
-  LineHealthEndpoint: ${{$config(CommonConfig/1.0.6,LineHealthEndpoint)}}
+  SqlServerEndpoint: ${{$config(CommonConfig/1.0.9,SqlServerEndpoint)}}
+  LineHealthEndpoint: ${{$config(CommonConfig/1.0.9,LineHealthEndpoint)}}

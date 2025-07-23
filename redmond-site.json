@@ -2,6 +2,9 @@
     "properties": {
         "description": "Redmond",
         "addressResourceId": "/subscriptions/973d15c6-6c57-447e-b9c6-6d79b5b784ab/resourcegroups/RedmondGroup/providers/Microsoft.EdgeOrder/addresses/Redmond-Site-Address",
-        "displayName": "Redmond"
+        "displayName": "mnath-redmond",
+        "labels": {
+            "level": "factory"
+        }
     }
 }
