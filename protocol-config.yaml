@@ -1,0 +1,11 @@
+schema:
+  name: ProtocolSchema
+  version: 1.0.0
+metadata:
+  name: ProtocolConfig
+  version: 1.0.0
+configs:
+  SupportedHttpMethods: ${{$val(SupportedHttpMethods)}}
+  TCP:
+    EnableSSL: ${{$val(TCP.EnableSSL)}}
+    

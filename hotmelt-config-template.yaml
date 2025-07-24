@@ -1,0 +1,11 @@
+schema:
+  name: HotmeltSchema
+  version: 1.0.1
+metadata:
+  name: mnath-hotmelt
+  version: 1.0.7
+configs:
+  ErrorThreshold: ${{$val(ErrorThreshold)}}
+  ${{$include(LogsettingsConfig/1.0.0)}}:
+  ${{$include(ProtocolConfig/1.0.0, TCP)}}:
+  TargetName: ${{$target(name)}}

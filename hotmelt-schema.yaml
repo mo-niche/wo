@@ -1,9 +1,12 @@
-metadata:
-  name: SharedSchema
-  version: 1.0.7
-
 rules:
   configs:
+    ErrorThreshold:
+      type: string
+      required: true
+      editableAt:
+        - line
+      editableBy:
+        - OT
     ${{$include(LogsettingsSchema/1.0.0)}}:
     ${{$include(ProtocolSchema/1.0.0, TCP)}}:
     TempSettings:
@@ -16,3 +19,7 @@ rules:
         - line
       editableBy:
         - OT
+
+metadata:
+  name: HotmeltSchema
+  version: 1.0.1
