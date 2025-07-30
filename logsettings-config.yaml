@@ -1,11 +1,11 @@
 schema:
   name: LogsettingsSchema
-  version: 1.0.0
+  version: 1.0.1
 metadata:
   name: LogsettingsConfig
-  version: 1.0.0
+  version: 1.0.1
 configs:
   LogSettings:
     LogOutput:
-      EnableConsole: true
-      # EnableConsole: ${{$val(LogSettings.LogOutput.EnableConsole)}}
+      # EnableConsole: true
+      EnableConsole: ${{$val(LogSettings.LogOutput.EnableConsole)}}

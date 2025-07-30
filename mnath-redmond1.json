@@ -1,0 +1,17 @@
+{
+    "properties": {
+        "description": "Redmond",
+        "displayName": "mnath-redmond1",
+        "siteAddress": {
+            "streetAddress1": "street1",
+            "streetAddress2": "street2",
+            "city": "Redmond",
+            "stateOrProvince": "",
+            "country": "US",
+            "postalCode": ""
+        },
+        "labels": {
+            "level": "factory"
+        }
+    }
+}

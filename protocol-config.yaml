@@ -1,9 +1,9 @@
 schema:
   name: ProtocolSchema
-  version: 1.0.0
+  version: 1.0.1
 metadata:
   name: ProtocolConfig
-  version: 1.0.0
+  version: 1.0.1
 configs:
   SupportedHttpMethods: ${{$val(SupportedHttpMethods)}}
   TCP:

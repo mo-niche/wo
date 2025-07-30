@@ -7,8 +7,8 @@ rules:
         - line
       editableBy:
         - OT
-    ${{$include(LogsettingsSchema/1.0.0)}}:
-    ${{$include(ProtocolSchema/1.0.0, TCP)}}:
+    ${{$include(LogsettingsSchema/1.0.1)}}:
+    ${{$include(ProtocolSchema/1.0.1, TCP)}}:
     TempSettings:
       type: object
       required: true
@@ -21,5 +21,5 @@ rules:
         - OT
 
 metadata:
-  name: HotmeltSchema
-  version: 1.0.1
+  name: HotmeltSchema3
+  version: 1.0.2

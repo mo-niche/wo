@@ -1,11 +1,11 @@
 schema:
-  name: HotmeltSchema
-  version: 1.0.1
+  name: HotmeltSchema3
+  version: 1.0.2
 metadata:
-  name: mnath-hotmelt
-  version: 1.0.7
+  name: mnath-hotmelt4
+  version: 1.0.2
 configs:
   ErrorThreshold: ${{$val(ErrorThreshold)}}
-  ${{$include(LogsettingsConfig/1.0.0)}}:
-  ${{$include(ProtocolConfig/1.0.0, TCP)}}:
+  ${{$include(LogsettingsConfig/1.0.1)}}:
+  ${{$include(ProtocolConfig/1.0.1, TCP)}}:
   TargetName: ${{$target(name)}}

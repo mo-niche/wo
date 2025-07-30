@@ -1,6 +1,6 @@
 metadata:
   name: ProtocolSchema
-  version: 1.0.0
+  version: 1.0.1
   
 rules:
   configs:
@@ -11,9 +11,9 @@ rules:
         - factory
       editableBy:
         - OT
-    TCP:
-      type: object
-      required: true
+    # TCP:
+    #   type: object
+    #   required: true
     TCP.EnableSSL:
       type: boolean
       required: true
